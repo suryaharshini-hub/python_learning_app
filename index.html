@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Python Universe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="clickSound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"></audio>
+<audio id="successSound" src="https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3"></audio>
+<audio id="errorSound" src="https://assets.mixkit.co/active_storage/sfx/2954/2954-preview.mp3"></audio>
+
+
+<div class="container">
+
+  <div class="sidebar">
+    <h1 class="logo">PyVerse</h1>
+    <button onclick="loadTopic('list')">📋 List</button>
+    <button onclick="loadTopic('tuple')">📦 Tuple</button>
+    <button onclick="loadTopic('set')">🧩 Set</button>
+    <button onclick="loadTopic('pattern')">⭐ Pattern</button>
+  </div>
+
+  <div class="main">
+
+    <h1 id="title" class="mainTitle">Select a Topic</h1>
+    <p id="explanation"></p>
+
+    <div class="editorCard">
+      <h2>Code Editor</h2>
+      <textarea id="codeArea"></textarea>
+      <button class="runBtn" onclick="runCode()">▶ Run Code</button>
+      <p id="liveError"></p>
+    </div>
+
+    <div class="outputCard">
+      <h2>Output Console</h2>
+      <pre id="output"></pre>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<div class="streakBox">
+🔥 Streak: <span id="streak">0</span> days
+</div>

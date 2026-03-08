@@ -1,0 +1,87 @@
+body{
+  margin:0;
+  font-family: 'Segoe UI';
+  background: linear-gradient(120deg,#ff9a9e,#fad0c4,#fad0c4,#a18cd1);
+  height:100vh;
+}
+
+.container{display:flex;height:100vh;}
+
+.sidebar{
+  width:230px;
+  background: rgba(0,0,0,0.8);
+  padding:20px;
+  backdrop-filter: blur(10px);
+}
+
+.logo{
+  color:#ffcc70;
+  text-align:center;
+  font-size:32px;
+}
+
+.sidebar button{
+  width:100%;
+  padding:14px;
+  margin-top:15px;
+  border:none;
+  border-radius:12px;
+  font-size:16px;
+  background:linear-gradient(45deg,#00f5a0,#00d9f5);
+  cursor:pointer;
+  transition:0.3s;
+}
+.sidebar button:hover{transform:scale(1.05);}
+
+.main{flex:1;padding:30px;}
+
+.mainTitle{
+  font-size:45px;
+  color:#222;
+  text-shadow:2px 2px 5px white;
+}
+
+.editorCard,.outputCard{
+  background:rgba(255,255,255,0.2);
+  padding:20px;
+  border-radius:20px;
+  margin-top:20px;
+  backdrop-filter: blur(10px);
+}
+
+textarea{
+  width:100%;
+  height:150px;
+  background:black;
+  color:#00ff9c;
+  font-size:16px;
+}
+
+pre{
+  background:black;
+  color:#00ff9c;
+  padding:15px;
+  min-height:150px;
+}
+
+.runBtn{
+  margin-top:10px;
+  padding:10px 20px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(45deg,#ff512f,#dd2476);
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+}
+
+#liveError{color:red;font-weight:bold;}
+.streakBox{
+  background:linear-gradient(45deg,#ff9a9e,#fecfef);
+  padding:12px;
+  border-radius:12px;
+  text-align:center;
+  margin-bottom:15px;
+  color:#222;
+  font-weight:bold;
+}
