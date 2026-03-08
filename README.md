@@ -120,16 +120,6 @@ The goal is to make learning Python concepts more engaging and practical.
 
 ---
 
-## Future Improvements
-
-Planned upgrades include:
-
-* Python quiz system
-* Leaderboard for learners
-* More Python topics
-* Code validation improvements
-* User login and progress tracking
-
 ---
 
 ## Author
