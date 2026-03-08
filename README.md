@@ -120,8 +120,6 @@ The goal is to make learning Python concepts more engaging and practical.
 
 ---
 
----
-
 ## Author
 
 Surya Harshini
